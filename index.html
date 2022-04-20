@@ -9,7 +9,9 @@
 
         <!-- Bootstrap -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
+
+        <!-- CSS -->
 
         <link rel="stylesheet" href="index.css" />
     </head>
@@ -43,25 +45,12 @@
                             >
                         </li>
                         <li class="nav-item dropdown">
-                            <a
-                                href="#competences"
-                                class="nav-link dropdown-toggle"
-                                id="navbarDropdown"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="true"
+                            <a href="#competences" class="nav-link"
                                 >Mes compétences</a
                             >
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <a href="" class="dropdown-item">Lien1</a
-                                ><a href="" class="dropdown-item">Lien2</a>
-                                <div class="dropdown-divider"></div>
-                                <a href="" class="dropdown-item">Lien3</a>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#loisirs" class="nav-link">Loisirs</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contacts" class="nav-link">Contacts</a>
@@ -94,23 +83,22 @@
                 </div>
                 <div>
                     Curieux et passionné par tout ce qui touche aux technologies
-                    de l'information, j'aimerais travailler dans un secteur et
-                    porteur de sens dans le milieu du numérique et du digital.
+                    de l'information, j'aimerais travailler dans un secteur
+                    innovant et porteur de sens dans le milieu du numérique et
+                    du digital.
                 </div>
             </div>
         </div>
 
+        <!--Compétences - Cartes-->
+
         <section id="competences">
-            <h2 class="text-center mt-5">Mes compétences</h2>
+            <h2 class="text-center mt-5 text-uppercase">Mes compétences</h2>
             <div class="container-fluid p-3" id="competences">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="card mt-3 p-3">
-                            <img src="Images/html5.png" alt="" />
-                            <!-- <img
-                                src="Images/css3.png"
-                                alt=""
-                            /> -->
+                            <img src="html5.png" alt="" />
                             <div class="card-body">
                                 <h3 class="card-title">Web Design</h3>
                                 <p class="card-text">
@@ -124,7 +112,7 @@
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="card mt-3 p-3">
                             <img
-                                src="Images/bootstrap.png"
+                                src="bootstrap.png"
                                 alt=""
                                 class="card-img-top"
                             />
@@ -142,7 +130,7 @@
                     <div class="col-12 col-sm-12 col-lg-4">
                         <div class="card mt-3 p-3">
                             <img
-                                src="Images/cpp.png"
+                                src="cpp.png"
                                 alt=""
                                 class="card-img-top"
                             />
@@ -158,13 +146,18 @@
                     </div>
                 </div>
 
-                <!--Compétences linguistiques-->
+                <!--Compétences linguistiques - Barre de progression-->
 
                 <div class="container-fluid p-0 my-4">
                     <h2 class="my-4">Autres compétences</h2>
                     <div class="row">
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-lg-5">
                             <div class="progress m-2">
+                                <img
+                                    src="Flag_of_the_United_Kingdom_(3-5).svg.png"
+                                    alt=""
+                                    class="mr-3"
+                                />
                                 <div
                                     class="progress-bar w-15 bg-danger border-2"
                                     role="progressbar"
@@ -176,8 +169,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-5 offset-md-2">
+                        <div class="col-12 col-lg-5 offset-lg-2">
                             <div class="progress m-2">
+                                <img
+                                    src="francetn_.png"
+                                    alt=""
+                                    class="mr-3"
+                                />
                                 <div
                                     class="progress-bar w-70 bg-danger border-2"
                                     role="progressbar"
@@ -193,6 +191,8 @@
                 </div>
             </div>
         </section>
+
+        <!--Carrousel-->
 
         <section id="loisirs">
             <div class="container-fluid">
@@ -230,7 +230,7 @@
                             data-bs-interval="5000"
                         >
                             <img
-                                src="Images/prog.png"
+                                src="prog.png"
                                 class="d-block w-100"
                                 alt="..."
                             />
@@ -245,7 +245,7 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
                             <img
-                                src="Images/promenade.jpg"
+                                src="promenade.jpg"
                                 class="d-block w-100"
                                 alt="..."
                             />
@@ -258,8 +258,12 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
-                            <img src="Images/livre1.jpg" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
+                            <img
+                                src="manette.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                            <div class="carousel-caption d-none d-md-block text-black">
                                 <h5>Les jeux vidéo</h5>
                                 <p>
                                     Some representative placeholder content for
@@ -302,29 +306,65 @@
                         <h2 class="text-start mb-5">Mes contacts</h2>
                         <ul>
                             <li>
-                                <img src="Images/localisation.jpg" alt="" />
+                                <img src="localisation.jpg" alt="" />
                                 <span class="fw-bold">Adresse</span> : Bénin,
                                 Atlantique, Abomey-Calavi.
                             </li>
                             <br />
                             <li>
-                                <img src="Images/telephone.jpg" alt="" />
+                                <img src="telephone.jpg" alt="" />
                                 <span class="fw-bold">Téléphone</span> : +229
                                 54142205
                             </li>
                             <br />
                             <li>
-                                <img src="Images/email.jpg" alt="" />
+                                <img src="email.jpg" alt="" />
                                 <span class="fw-bold">Email</span> :
                                 <a href="mailto:meshachgbewezoun@gmail.com"
                                     >meshachgbewezoun@gmail.com</a
                                 >
                             </li>
                         </ul>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://free.facebook.com/meschack.gbz"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="Facebook.png"
+                                        alt="logo_facebook"
+                                    />
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a href="t.me/meschack_gbz">
+                                    <img
+                                        src="telegram.png"
+                                        alt="logo_telegram"
+                                    />
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a href="https://github.com/Meschack">
+                                    <img
+                                        src="github.png"
+                                        alt="logo_github"
+                                    />
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a href="">
+                                    <img
+                                        src="linkedin.jpg"
+                                        alt="logo_linkedin"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- <div class="col-2">
-                        <img src="Images/figurant.jpg" alt="" />
-                    </div> -->
+
+                    <!--Zone de formulaire-->
                     <div class="col-12 container col-lg-7 offset-lg-1">
                         <h2 class="text-start text-lg-center my-5 mt-lg-0">
                             M'envoyer un message
@@ -364,6 +404,23 @@
                                 </div>
                             </div>
                             <div class="mb-3">
+                                <label for="selectImpression" class="form-label"
+                                    >Comment trouvez vous mon site ?</label
+                                >
+
+                                <select
+                                    class="form-select"
+                                    id="selectImpression"
+                                >
+                                    <option>Très mal fait</option>
+                                    <option>Pas assez bien fait</option>
+                                    <option>Assez-bien</option>
+                                    <option selected>Bien</option>
+                                    <option>Génial</option>
+                                    <option>Génialissime</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
                                 <label for="inputMessage" class="form-label"
                                     >Votre message</label
                                 ><br />
@@ -382,12 +439,12 @@
                 </div>
             </div>
             <div
-                class="fw-bold fst-italic py-4 text-center fs-4 bg-dark text-light"
+                class="fw-bold fst-italic py-4 text-center text-capitalize fs-4 bg-dark text-light"
             >
                 Copyright Avril 2022 Meschack Gbewezoun. Tous droits réservés
             </div>
         </footer>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
     </body>
 </html>
