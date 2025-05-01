@@ -9,9 +9,16 @@ export const AboutMe = () => {
       className="lg:centered flex flex-col items-start justify-start px-4 py-10 lg:flex-row lg:items-center lg:justify-center lg:px-20 lg:py-14"
     >
       <div className="flex flex-col items-center justify-start gap-5 lg:flex-row lg:justify-between lg:gap-16">
-        <Image alt="" src={'/boy2.png'} width={343} height={374} className="block lg:hidden" />
         <Image
-          alt=""
+          alt="Illustration image"
+          src="/boy2.png"
+          width={343}
+          height={374}
+          className="block lg:hidden"
+        />
+
+        <Image
+          alt="Illustration image"
           src={'/boy2-desktop.png'}
           width={530}
           height={572}
@@ -22,9 +29,7 @@ export const AboutMe = () => {
             <span>About</span>
             <span className="font-extrabold">Me</span>
           </h2>
-          <div
-            className={`paragraph2 flex flex-col text-zinc-500 items-start justify-center gap-5`}
-          >
+          <div className="paragraph2 flex flex-col text-zinc-500 items-start justify-center gap-5">
             <p>
               I'm Godwin, a self-taught full-stack developer with a deep appreciation for clean
               code, beautiful interfaces, and seamless user experiences. I specialize in building
@@ -35,7 +40,7 @@ export const AboutMe = () => {
               in.
             </p>
             <p>
-              I began my journey into web development in 2018, and since then, I've continuously
+              I began my journey into web development in 2021, and since then, I've continuously
               evolved by taking on challenging projects, learning from the community, and pushing
               myself to stay ahead in a fast-moving ecosystem. Whether it's crafting scalable
               backends, designing responsive UIs, or setting up DevOps pipelines, I love being
