@@ -1,6 +1,17 @@
-import { SkillEnum } from '@/types/skill'
-
 import { Skill } from '../skill'
+
+export const skills = [
+  'typescript',
+  'javascript',
+  'react',
+  'nextjs',
+  'tailwindcss',
+  'nestjs',
+  'adonisjs',
+  'figma',
+  'git',
+  'prisma'
+] as const
 
 export const Skills = () => {
   return (
@@ -13,43 +24,10 @@ export const Skills = () => {
           <span>My</span>
           <span className="font-extrabold">Skills</span>
         </h2>
-        <div className="hidden w-full flex-col items-center justify-start py-5 md:flex">
-          <div className="flex w-full items-center justify-between gap-10 py-5">
-            <Skill name={SkillEnum.typescript} />
-            <Skill name={SkillEnum.javascript} />
-            <Skill name={SkillEnum.react} />
-            <Skill name={SkillEnum.nodejs} />
-            <Skill name={SkillEnum.figma} />
-          </div>
-          <div className="flex w-full items-center justify-between gap-10 py-5">
-            <Skill name={SkillEnum.git} />
-            <Skill name={SkillEnum.express} />
-            <Skill name={SkillEnum.sass} />
-            <Skill name={SkillEnum.mongodb} />
-            <Skill name={SkillEnum.socket} />
-          </div>
-        </div>
-        <div className="flex w-full flex-col items-center justify-center gap-5 md:hidden">
-          <div className="flex w-full items-center justify-center gap-5">
-            <Skill name={SkillEnum.typescript} />
-            <Skill name={SkillEnum.javascript} />
-          </div>
-          <div className="flex w-full items-center justify-center gap-5">
-            <Skill name={SkillEnum.react} />
-            <Skill name={SkillEnum.nodejs} />
-          </div>
-          <div className="flex w-full items-center justify-center gap-5">
-            <Skill name={SkillEnum.figma} />
-            <Skill name={SkillEnum.git} />
-          </div>
-          <div className="flex w-full items-center justify-center gap-5">
-            <Skill name={SkillEnum.express} />
-            <Skill name={SkillEnum.sass} />
-          </div>
-          <div className="flex w-full items-center justify-center gap-5">
-            <Skill name={SkillEnum.mongodb} />
-            <Skill name={SkillEnum.socket} />
-          </div>
+        <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-10 py-5">
+          {skills.map((skill) => (
+            <Skill key={skill} name={skill} />
+          ))}
         </div>
       </div>
     </div>
