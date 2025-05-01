@@ -4,7 +4,7 @@ export type Icon = LucideIcon
 
 interface HoverProp {
   hover?: boolean
-  className: string
+  className?: string
 }
 
 export const Icons = {

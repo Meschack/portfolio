@@ -1,7 +1,5 @@
 'use client'
 
-import { defaultIconStyle, hoverIconStyle } from '@/utils/constants'
-
 import { Icons } from './icons'
 import { Button } from './ui/button'
 
@@ -17,29 +15,11 @@ enum SocialEnum {
 }
 
 const SocialButton = ({ social }: SocialButtonProps) => {
+  const IconComponent = Icons[social]
+
   return (
-    <Button variant={'outline'} size={'icon'} className="group">
-      {social === SocialEnum.facebook ? (
-        <>
-          <Icons.facebook className={hoverIconStyle} />
-          <Icons.facebook hover className={defaultIconStyle} />
-        </>
-      ) : social === SocialEnum.reddit ? (
-        <>
-          <Icons.reddit className={hoverIconStyle} />
-          <Icons.reddit hover className={defaultIconStyle} />
-        </>
-      ) : social === SocialEnum.discord ? (
-        <>
-          <Icons.discord className={hoverIconStyle} />
-          <Icons.discord hover className={defaultIconStyle} />
-        </>
-      ) : (
-        <>
-          <Icons.twitter className={hoverIconStyle} />
-          <Icons.twitter hover className={defaultIconStyle} />
-        </>
-      )}
+    <Button size={'icon'} className="group border bg-transparent hover:bg-zinc-50">
+      <IconComponent />
     </Button>
   )
 }

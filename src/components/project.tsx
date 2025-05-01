@@ -22,8 +22,9 @@ const Project = ({ description, image, title, num, link, reverse }: ProjectProps
         src={image}
         width={594}
         height={476}
-        className="hidden w-1/2 rounded-xl md:block object-cover"
+        className="w-full rounded-xl md:block object-cover"
       />
+
       <div className="flex flex-col items-start justify-center gap-7 md:w-1/2">
         <div className="heading4 md:display-text font-extrabold text-background">0{num}</div>
         <div className="heading5 md:heading2 font-extrabold text-background">{title}</div>
