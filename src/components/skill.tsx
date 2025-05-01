@@ -12,9 +12,7 @@ interface SkillProps {
 
 const Skill = ({ name }: SkillProps) => {
   return (
-    <div
-      className={`group inline-flex w-1/2 flex-col items-center justify-center gap-8 rounded-[4px] border border-foreground p-6 text-foreground transition delay-150 duration-300 ease-in-out hover:bg-foreground hover:text-background md:hover:scale-125`}
-    >
+    <div className="group inline-flex w-1/2 flex-col items-center cursor-pointer justify-center gap-8 rounded-[4px] border border-foreground p-6 text-foreground hover:bg-foreground hover:text-background md:hover:scale-105">
       {name === SkillEnum.typescript ? (
         <div>
           <Icons.typescript className={defaultIconStyle} />

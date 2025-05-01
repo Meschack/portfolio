@@ -4,22 +4,36 @@ import { Icons } from './icons'
 import { Button } from './ui/button'
 
 interface SocialButtonProps {
-  social: SocialEnum
+  social: (typeof socials)[number]
 }
 
-enum SocialEnum {
-  facebook = 'facebook',
-  reddit = 'reddit',
-  discord = 'discord',
-  twitter = 'twitter'
-}
+const socials = [
+  {
+    name: 'facebook',
+    link: 'https://facebook.com/meschackgodwin'
+  },
+  {
+    name: 'reddit',
+    link: '#'
+  },
+  {
+    name: 'discord',
+    link: 'https://discord.com/users/1046896178148683827'
+  },
+  {
+    name: 'twitter',
+    link: 'https://twitter.com/MeschackGbz'
+  }
+] as const
 
 const SocialButton = ({ social }: SocialButtonProps) => {
-  const IconComponent = Icons[social]
+  const IconComponent = Icons[social.name]
 
   return (
-    <Button size={'icon'} className="group border bg-transparent hover:bg-zinc-50">
-      <IconComponent />
+    <Button asChild size="icon" className="group border bg-transparent hover:bg-zinc-50">
+      <a href={social.link}>
+        <IconComponent />
+      </a>
     </Button>
   )
 }
@@ -27,10 +41,9 @@ const SocialButton = ({ social }: SocialButtonProps) => {
 const SocialButtons = ({ className }: { className: string }) => {
   return (
     <div className={`flex items-start justify-start gap-6 py-1 ${className}`}>
-      <SocialButton social={SocialEnum.facebook} />
-      <SocialButton social={SocialEnum.reddit} />
-      <SocialButton social={SocialEnum.discord} />
-      <SocialButton social={SocialEnum.twitter} />
+      {socials.map((social) => (
+        <SocialButton key={social.name} social={social} />
+      ))}
     </div>
   )
 }

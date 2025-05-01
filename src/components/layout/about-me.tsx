@@ -26,23 +26,30 @@ export const AboutMe = () => {
             className={`paragraph2 flex flex-col text-zinc-500 items-start justify-center gap-5`}
           >
             <p>
-              I&apos;m a passionate, self-proclaimed designer who specializes in full stack
-              development (React.js & Node.js). I am very enthusiastic about bringing the technical
-              and visual aspects of digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.
+              I'm Godwin, a self-taught full-stack developer with a deep appreciation for clean
+              code, beautiful interfaces, and seamless user experiences. I specialize in building
+              modern web applications with technologies like Next.js, TypeScript, NestJS, Tailwind
+              CSS, and Supabase. I care deeply about bridging the gap between design and
+              development—making sure every product I work on is both technically solid and visually
+              refined. Writing readable, maintainable, and performant code is something I take pride
+              in.
             </p>
             <p>
-              I began my journey as a web developer in 2015, and since then, I&apos;ve continued to
-              grow and evolve as a developer, taking on new challenges and learning the latest
-              technologies along the way. Now, in my early thirties, 7 years after starting my web
-              development journey, I&apos;m building cutting-edge web applications using modern
-              technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+              I began my journey into web development in 2018, and since then, I've continuously
+              evolved by taking on challenging projects, learning from the community, and pushing
+              myself to stay ahead in a fast-moving ecosystem. Whether it's crafting scalable
+              backends, designing responsive UIs, or setting up DevOps pipelines, I love being
+              involved in the full development lifecycle. I'm also exploring areas like
+              offline-first experiences and automation to make apps more resilient and
+              user-friendly.
             </p>
             <p>
-              When I&apos;m not in full-on developer mode, you can find me hovering around on
-              twitter or on indie hacker, witnessing the journey of early startups or enjoying some
-              free time. You can follow me on Twitter where I share tech-related bites and build in
-              public, or you can follow me on GitHub.
+              When I'm not coding, you'll often find me browsing through indie hacker stories,
+              drawing inspiration from early-stage products and builders. I also enjoy sharing what
+              I learn—either on GitHub through open-source contributions or on social platforms
+              where I talk about tools, techniques, and real-world dev experiences. I'm always
+              building, always learning, and always looking for ways to create better digital
+              products.
             </p>
           </div>
         </div>
