@@ -20,12 +20,15 @@ const projects: ProjectType[] = [
   {
     description: (
       <p className="paragraph2 text-zinc-500">
-        I'm Vivien Ogoun. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to specimen book.
+        A modern e-commerce website built with <a href="https://nextjs.org/">Next.js</a>,{' '}
+        <a href="https://graphql.org/">GraphQL</a>, and{' '}
+        <a href="https://tailwindcss.com/">Tailwind CSS</a>. The website integrates with the{' '}
+        <a href="https://shopify.dev/api/storefront">Shopify Storefront API</a> to provide a
+        seamless shopping experience with features like product listings, cart management, and
+        checkout flow.
       </p>
     ),
-    image: '/ballamas.png',
+    image: '/ballamas.jpg',
     link: 'https://ballamas-store.vercel.app/',
     title: 'Ballamas | E-commerce Minimal Website'
   },
