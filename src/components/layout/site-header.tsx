@@ -21,9 +21,11 @@ export const SiteHeader = () => {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <Button className="group hidden lg:flex">
-              <span className="button-text mr-2 font-semibold">Resume</span>
-              <Icons.download className="*:stroke-white" />
+            <Button className="group hidden lg:flex" asChild>
+              <a download target="_blank" href="https://kloo.me/godwin-gbewezoun-resume">
+                <span className="button-text mr-2 font-semibold">Resume</span>
+                <Icons.download className="*:stroke-white" />
+              </a>
             </Button>
             <div className="flex items-center justify-center lg:hidden">
               <DropdownMenu>
