@@ -1,15 +1,7 @@
-type SiteConfig = {
-  name: string
-  description: string
-  mainNav: {
-    title: string
-    href: string
-  }[]
-}
-
-export const siteConfig: SiteConfig = {
-  name: 'Personal',
-  description: 'Figma To Code Challenge Week 4 by Vivien Ogoun.',
+export const siteConfig = {
+  name: 'Godwin Gbewezoun',
+  description:
+    'Full-Stack Web Developer passionate about creating robust and scalable web applications.',
   mainNav: [
     {
       title: 'About Me',
